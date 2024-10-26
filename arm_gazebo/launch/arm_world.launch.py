@@ -17,12 +17,12 @@ def generate_launch_description():
     declared_arguments = [] 
  
     arm_description_path = get_package_share_directory('arm_description')
-    arm_urdf = os.path.join(arm_description_path, "urdf", "arm.urdf")
+    arm_urdf = os.path.join(arm_description_path, "urdf", "arm.urdf.xacro")
     
     
     with open(arm_urdf, 'r') as infp:
         arm_desc = infp.read()
-    robot_description_arm = {"robot_description": arm_desc}
+    robot_description_arm = {"robot_description":Command(['xacro ', arm_urdf])}
 
     robot_state_publisher_node = Node(
         package="robot_state_publisher",

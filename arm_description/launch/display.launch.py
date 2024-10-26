@@ -29,15 +29,15 @@ def generate_launch_description():
 
 
     # get package directory and specify urdf file
-    arm_urdf_path = get_package_share_directory('arm_description')
-    urdf_hmwrk1 = os.path.join(arm_urdf_path, "urdf", "arm.urdf")
+    arm_description_path = get_package_share_directory('arm_description')
+    arm_urdf = os.path.join(arm_description_path, "urdf", "arm.urdf.xacro")
 
     # read urdf
-    with open(urdf_hmwrk1, 'r') as infp:
+    with open(arm_urdf, 'r') as infp:
         arm_desc = infp.read()
 
     # set description
-    robot_description_arm = {"robot_description": arm_desc}
+    robot_description_arm = {"robot_description":Command(['xacro ', arm_urdf])}
 
 
     # nodes to launch

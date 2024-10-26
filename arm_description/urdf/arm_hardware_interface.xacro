@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <xacro:macro name="define_joint_interface" params="joint_name">
+    <joint name="${joint_name}" type="revolute">
+      <parent link="base_turn"/>
+      <child link="base_turn_rot"/>
+      <origin xyz="-0.0 0.0155 0.013" rpy="0 0 -1.57"/>
+      <axis xyz="0 0 1" />
+      <limit effort="300" velocity="0.1" lower="-2.57" upper="2.57"/>
+      <ros2_control>
+        <hardware_interface>PositionJointInterface</hardware_interface>
+      </ros2_control>
+    </joint>
+  </xacro:macro>
+  
+  <!-- Use the macro for your joints -->
+  <xacro:define_joint_interface joint_name="j0"/>
+  <xacro:define_joint_interface joint_name="j1"/>
+  <xacro:define_joint_interface joint_name="j2"/>
+  <xacro:define_joint_interface joint_name="j3"/>
+  <!-- Add any other joints as necessary -->
+  
+</robot>
