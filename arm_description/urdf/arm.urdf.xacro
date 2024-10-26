@@ -2,6 +2,9 @@
 
 <robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <xacro:include filename="file:///$(find arm_description)/urdf/arm_hardware_interface.xacro"/>
+
+
   <material name="red">
     <color rgba="1 0 0 1"/>
   </material>
