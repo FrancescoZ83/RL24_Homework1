@@ -6,11 +6,10 @@
     <color rgba="1 0 0 1"/>
   </material>
 
-
   <link name="base_link">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -36,14 +35,14 @@
   <link name="base_turn">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/base_turn.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/base_turn.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/base_turn.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/base_turn.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>   
@@ -64,13 +63,13 @@
   <link name="base_turn_rot">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/base_turn_table_rot.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/base_turn_table_rot.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="red"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/base_turn_table_rot.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/base_turn_table_rot.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -90,14 +89,14 @@
   <link name="dyn2">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -128,7 +127,7 @@
   <link name="f4">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/f4_n_f3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/f4_n_f3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -154,13 +153,13 @@
   <link name="dyn3">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -191,7 +190,7 @@
   <link name="f5">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/f4_n_f3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/f4_n_f3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -217,14 +216,14 @@
   <link name="dyn4">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -256,7 +255,7 @@
   <link name="wrist">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/wrist.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
@@ -283,7 +282,7 @@
     <link name="dyn5">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/dyn.stl" scale="0.01 0.01 0.01"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
@@ -321,14 +320,14 @@
   <link name="crawer_base">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/the_crawer_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/the_crawer_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
     </visual>
     <collision>
       <geometry>
-          <mesh filename="package://arm_description/meshes/the_crawer_base.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/the_crawer_base.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </collision>
@@ -348,7 +347,7 @@
   <link name="crawer_left">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/the_crawer.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/the_crawer.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="white">
@@ -378,7 +377,7 @@
   <link name="crawer_right">
     <visual>
       <geometry>
-        <mesh filename="package://arm_description/meshes/the_crawer.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/user/ros2_ws/install/arm_description/share/arm_description/meshes/the_crawer.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="white">
