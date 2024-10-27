@@ -36,10 +36,23 @@ def generate_launch_description():
         period=2.0,
         actions=[arm_control_launch]
     )
+    
+    bridge_camera = Node(
+        package='ros_ign_bridge',
+        executable='parameter_bridge',
+        arguments=[
+            '/camera@sensor_msgs/msg/Image@gz.msgs.Image',
+            '/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
+            '--ros-args', 
+            '-r', '/camera:=/videocamera',
+        ],
+        output='screen'
+    )
 
     nodes_to_start = [
        arm_world_launch,
        delay_arm_control_launch,
+       bridge_camera,
     ]
 
     return LaunchDescription(nodes_to_start)

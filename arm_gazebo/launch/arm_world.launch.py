@@ -45,7 +45,7 @@ def generate_launch_description():
             launch_arguments={'gz_args': LaunchConfiguration('gz_args')}.items()
     )
 
-    position = [0.0, 0.0, 0.45]
+    position = [0.0, 0.0, 0.1]
 
     gz_spawn_entity = Node(
         package='ros_gz_sim',
