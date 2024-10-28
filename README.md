@@ -1,7 +1,7 @@
 From the ./ros2_ws folder of the Docker container of the class.
 
 1) Run "./src/install_gazebo.sh" and check that in Gazebo and on terminal all is working properly.
-2) On a second terminal, connect to the existing container and run "./src/launch_rviz.sh". Check that the description of the robot is correct and the camera is working
+2) On a second terminal, connect to the existing container and run "./src/launch_rviz.sh". Check that the URDF of the robot is correct and the camera is working
 
 Now, you can close Gazebo and Rviz. Check that the arm_controller_node publisher and subscriber work properly.
 
