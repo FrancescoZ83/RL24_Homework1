@@ -3,7 +3,6 @@
        xmlns:ros2_control="http://ros2-control.ros.org/">
   
   <xacro:macro name="arm_hardware_interface" params="name initial_pos">
-  
 
       <joint name="${name}" type="revolute">
       
@@ -22,7 +21,7 @@
          
     
       </joint>
-    
+
   </xacro:macro>
 
 </robot>
